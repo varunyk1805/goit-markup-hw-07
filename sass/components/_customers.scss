@@ -1,0 +1,26 @@
+.customers {
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    width: 170px;
+    height: 92px;
+    border: 1px solid $icon-fill-color;
+    border-radius: 4px;
+    color: $icon-fill-color;
+
+    transition: border-color $transition-duration $transition-timing-function,
+      color $transition-duration $transition-timing-function;
+
+    &:hover,
+    &:focus {
+      border-color: $accent-color;
+      color: $accent-color;
+    }
+  }
+
+  &__icon {
+    fill: currentColor;
+  }
+}

@@ -1,0 +1,29 @@
+.grid {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: -30px;
+  margin-top: -30px;
+
+  &__item {
+    margin-left: 30px;
+    margin-top: 30px;
+
+    &--col-3 {
+      flex-basis: calc(100% / 3 - 30px);
+      min-width: 370px;
+    }
+
+    &--col-4 {
+      flex-basis: calc(100% / 4 - 30px);
+      min-width: 270px;
+    }
+
+    &--col-6 {
+      flex-basis: calc(100% / 6 - 30px);
+      min-width: 170px;
+    }
+  }
+}

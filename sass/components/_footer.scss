@@ -1,0 +1,26 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  background-color: $footer-background-color;
+
+  &__container {
+    display: flex;
+    align-items: baseline;
+  }
+
+  &__logo {
+    display: inline-block;
+    margin-bottom: 20px;
+
+    color: $primary-white-color;
+  }
+
+  &__joining {
+    margin-left: 70px;
+  }
+
+  &__subscription {
+    margin-left: auto;
+  }
+}

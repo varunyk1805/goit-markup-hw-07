@@ -1,4 +1,4 @@
-:root {
+/* :root {
   --primary-text-color: #757575;
   --title-text-color: #212121;
   --accent-color: #2196f3;
@@ -19,9 +19,9 @@
 
   --transition-duration: 250ms;
   --transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+} */
 
-h1,
+/* h1,
 h2,
 h3,
 h4,
@@ -31,17 +31,17 @@ p,
 ul {
   margin: 0;
   padding: 0;
-}
+} */
 
 /* Страница */
-.page {
+/* .page {
   background-color: var(--primary-white-color);
   color: var(--primary-text-color);
   font-family: Roboto, sans-serif;
-}
+} */
 
 /* Секция */
-.section {
+/* .section {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -96,10 +96,10 @@ ul {
   width: 1px;
   height: 1px;
   margin: -1px;
-}
+} */
 
 /* Контейнер */
-.container {
+/* .container {
   box-sizing: border-box;
   width: 1200px;
   padding-left: 15px;
@@ -113,10 +113,10 @@ ul {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
+} */
 
 /* Сетка */
-.grid {
+/* .grid {
   list-style: none;
   padding: 0;
   display: flex;
@@ -144,10 +144,10 @@ ul {
 .grid__item--col-6 {
   flex-basis: calc(100% / 6 - 30px);
   min-width: 170px;
-}
+} */
 
 /* Кнопка */
-.btn {
+/* .btn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -155,8 +155,8 @@ ul {
   width: 200px;
   height: 50px;
 
-  /* font-family: inherit; */
-  /* text-align: center; */
+  font-family: inherit;
+  text-align: center;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
@@ -208,10 +208,10 @@ ul {
 
 .btn-close__icon {
   fill: currentColor;
-}
+} */
 
 /* Лого */
-.logo {
+/* .logo {
   font-family: Raleway;
   font-style: normal;
   font-weight: 700;
@@ -226,10 +226,10 @@ ul {
 
 .logo__web {
   color: var(--accent-color);
-}
+} */
 
 /* Хедер */
-.header {
+/* .header {
   border-bottom: 1px solid var(--border-color);
 }
 
@@ -249,10 +249,10 @@ ul {
 
 .header__contacts {
   margin-left: auto;
-}
+} */
 
 /* Панель навигации */
-.nav {
+/* .nav {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -303,10 +303,10 @@ ul {
   height: 4px;
   border-radius: 2px;
   background: #2196f3;
-}
+} */
 
 /* Список контактов */
-.contacts {
+/* .contacts {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -344,10 +344,10 @@ ul {
 .contacts__icon {
   margin-right: 10px;
   fill: currentColor;
-}
+} */
 
 /* Подвал */
-.footer {
+/* .footer {
   padding-top: 60px;
   padding-bottom: 60px;
 
@@ -372,10 +372,10 @@ ul {
 
 .footer__subscription {
   margin-left: auto;
-}
+} */
 
 /* Адрес компании */
-.address {
+/* .address {
   color: var(--primary-white-color);
   font-style: normal;
   font-weight: 400;
@@ -403,10 +403,10 @@ ul {
 .address__link:hover,
 .address__link:focus {
   color: var(--accent-color);
-}
+} */
 
 /* Присоединяйтесь */
-.joining {
+/* .joining {
   color: var(--primary-white-color);
   font-weight: 700;
   font-size: 14px;
@@ -418,10 +418,10 @@ ul {
   margin-bottom: 20px;
 
   text-transform: uppercase;
-}
+} */
 
 /* Социальные сети */
-.socials__list {
+/* .socials__list {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -464,10 +464,10 @@ ul {
 
 .socials__icon {
   fill: currentColor;
-}
+} */
 
 /* Подписка */
-.subscription {
+/* .subscription {
   color: var(--primary-white-color);
   font-weight: 700;
   font-size: 14px;
@@ -521,10 +521,10 @@ ul {
 
 .subscription__input::placeholder {
   color: rgba(255, 255, 255, 0.6);
-}
+} */
 
 /* Преимущества */
-.feature__icon-box {
+/* .feature__icon-box {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -540,7 +540,6 @@ ul {
   margin-bottom: 10px;
 
   font-style: normal;
-  /* font-weight: 700; */
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -554,10 +553,10 @@ ul {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-}
+} */
 
 /* Направления работы */
-.services {
+/* .services {
   position: relative;
 }
 
@@ -585,10 +584,10 @@ ul {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-}
+} */
 
 /* Сотрудники */
-.team {
+/* .team {
   background: var(--primary-white-color);
 
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -628,10 +627,10 @@ ul {
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
-}
+} */
 
 /* Клиенты */
-.customers__link {
+/* .customers__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -654,10 +653,10 @@ ul {
 
 .customers__icon {
   fill: currentColor;
-}
+} */
 
 /* Радиокнопки фильтра */
-.radio {
+/* .radio {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
@@ -704,10 +703,10 @@ ul {
   color: var(--primary-white-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-}
+} */
 
 /* Примеры работ */
-.projects {
+/* .projects {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.56;
@@ -785,10 +784,10 @@ ul {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
-}
+} */
 
 /* Модальное окно */
-.backdrop {
+/* .backdrop {
   position: fixed;
   top: 0;
   left: 0;
@@ -807,13 +806,10 @@ ul {
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
-}
+} */
 
-.backdrop--is-hidden .modal {
-  transform: translate(-50%, -50%) scale(0.8);
-}
-
-.modal {
+/* модалка */
+/* .modal {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -829,6 +825,10 @@ ul {
 
   transform: translate(-50%, -50%) scale(1);
   transition: transform var(--transition-duration) var(--transition-timing-function);
+}
+
+.backdrop--is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0.8);
 }
 
 .modal__btn-close {
@@ -854,10 +854,10 @@ ul {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
+} */
 
 /* Группа инпутов */
-.input-group {
+/* .input-group {
   width: 100%;
 }
 
@@ -906,10 +906,10 @@ ul {
 
 .input-group__input:focus + .input-group__icon {
   fill: var(--accent-color);
-}
+} */
 
 /* Комментарий */
-.comment {
+/* .comment {
   width: 100%;
 }
 
@@ -957,10 +957,10 @@ ul {
   letter-spacing: 0.01em;
 
   color: rgba(117, 117, 117, 0.5);
-}
+} */
 
 /* Соглашение на рассылку */
-.checkbox {
+/* .checkbox {
   width: 100%;
 }
 
@@ -1020,4 +1020,4 @@ ul {
 
 .checkbox__input:checked ~ .checkbox__icon--on-checked {
   opacity: 1;
-}
+} */

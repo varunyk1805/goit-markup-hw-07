@@ -1,0 +1,46 @@
+.socials {
+  &__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin-left: -10px;
+  }
+
+  &__item {
+    margin-left: 10px;
+  }
+
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+
+    color: $primary-white-color;
+    background-color: $footer-socials-color;
+
+    transition: background-color $transition-duration $transition-timing-function;
+
+    &--team {
+      color: $icon-fill-color;
+      background-color: transparent;
+    }
+
+    &:hover,
+    &:focus {
+      background-color: $accent-color;
+    }
+
+    &--team:hover,
+    &--team:focus {
+      color: $primary-white-color;
+    }
+  }
+
+  &__icon {
+    fill: currentColor;
+  }
+}

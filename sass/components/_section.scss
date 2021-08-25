@@ -1,0 +1,56 @@
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  &--hero {
+    max-width: 1600px;
+    height: 600px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 200px;
+    padding-bottom: 200px;
+
+    background-color: $hero-background-color;
+    background-image: linear-gradient($linear-gradient-color, $linear-gradient-color),
+      url(../images/index/Img8.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &--services {
+    padding-top: 0;
+  }
+
+  &--team {
+    background-color: $second-background-color;
+  }
+
+  &__title {
+    margin-bottom: 50px;
+
+    color: $title-text-color;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    &--hero {
+      margin-bottom: 30px;
+
+      color: $primary-white-color;
+      font-weight: 900;
+      font-size: 44px;
+      line-height: 1.36;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    &--visually-hidden {
+      position: absolute;
+      clip: rect(0 0 0 0);
+      width: 1px;
+      height: 1px;
+      margin: -1px;
+    }
+  }
+}

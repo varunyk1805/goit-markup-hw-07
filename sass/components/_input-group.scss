@@ -1,0 +1,50 @@
+.input-group {
+  width: 100%;
+
+  &__label {
+    position: relative;
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+
+    color: $primary-text-color;
+
+    cursor: pointer;
+  }
+
+  &__input {
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding: 0 42px;
+    margin-top: 4px;
+    width: 100%;
+    outline: none;
+    transition: border $transition-duration $transition-timing-function;
+
+    cursor: pointer;
+
+    &:focus {
+      border-color: $accent-color;
+    }
+  }
+
+  &__icon {
+    position: absolute;
+    bottom: 20px;
+    left: 12px;
+
+    transform: translateY(50%);
+    transition: fill $transition-duration $transition-timing-function;
+  }
+
+  &__input:focus + &__icon {
+    fill: $accent-color;
+  }
+}
