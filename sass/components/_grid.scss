@@ -1,29 +1,21 @@
 .grid {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-left: -30px;
-  margin-top: -30px;
+  @extend %noListStyle;
+  @include flex(null, wrap, center, null);
+  @include margin(-30px, null, null, -30px);
 
   &__item {
-    margin-left: 30px;
-    margin-top: 30px;
+    @include margin(30px, null, null, 30px);
 
     &--col-3 {
-      flex-basis: calc(100% / 3 - 30px);
-      min-width: 370px;
+      @include sizeGrid(3, 30px);
     }
 
     &--col-4 {
-      flex-basis: calc(100% / 4 - 30px);
-      min-width: 270px;
+      @include sizeGrid(4, 30px);
     }
 
     &--col-6 {
-      flex-basis: calc(100% / 6 - 30px);
-      min-width: 170px;
+      @include sizeGrid(6, 30px);
     }
   }
 }

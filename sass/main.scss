@@ -1,6 +1,8 @@
+@import 'utils/colors';
 @import 'utils/variables';
 @import 'utils/reset';
 @import 'utils/mixins';
+@import 'utils/placeholders';
 @import 'components/page';
 @import 'components/section';
 @import 'components/container';
@@ -17,12 +19,14 @@
 @import 'components/subscription';
 @import 'components/feature';
 @import 'components/services';
-@import 'components/team';
+@import 'components/team-card';
 @import 'components/customers';
 @import 'components/radio';
-@import 'components/projects';
+@import 'components/projects-card';
 @import 'components/backdrop';
 @import 'components/modal';
 @import 'components/input-group';
 @import 'components/comment';
 @import 'components/checkbox';
+
+// @import 'utils/shadows';

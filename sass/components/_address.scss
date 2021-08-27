@@ -1,29 +1,25 @@
 .address {
-  color: $primary-white-color;
+  color: getColor('secondary');
   font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
+  @include font(400, 14px, 1.71, 0.03em);
 
   &__list {
-    list-style: none;
-    margin-bottom: -9px;
+    @extend %noListStyle;
+    @include margin(null, null, -9px, null);
   }
 
   &__item {
-    margin-bottom: 9px;
+    @include margin(null, null, 9px, null);
   }
 
   &__link {
-    color: $footer-contacts-color;
+    color: getColor('contacts--footer');
     text-decoration: none;
-
-    transition: color $transition-duration $transition-timing-function;
+    @include transition(color, null, null, 250ms, cubic-bezier(0.4, 0, 0.2, 1));
 
     &:hover,
     &:focus {
-      color: $accent-color;
+      color: getColor('accent');
     }
   }
 }

@@ -1,26 +1,24 @@
 .footer {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  @include padding(60px, null, 60px, null);
 
-  background-color: $footer-background-color;
+  background-color: getColor('background--footer');
 
   &__container {
-    display: flex;
-    align-items: baseline;
+    @include flex(null, null, null, baseline);
   }
 
   &__logo {
-    display: inline-block;
-    margin-bottom: 20px;
+    @extend %inlineBlock;
+    @include margin(null, null, 20px, null);
 
-    color: $primary-white-color;
+    color: getColor('secondary');
   }
 
   &__joining {
-    margin-left: 70px;
+    @include margin(null, null, null, 70px);
   }
 
   &__subscription {
-    margin-left: auto;
+    @include margin(null, null, null, auto);
   }
 }

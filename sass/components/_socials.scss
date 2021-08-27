@@ -1,42 +1,36 @@
 .socials {
   &__list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
-    margin-left: -10px;
+    @include flex(null, null, center, center);
+    @include margin(null, null, null, -10px);
+    @extend %noListStyle;
   }
 
   &__item {
-    margin-left: 10px;
+    @include margin(null, null, null, 10px);
   }
 
   &__link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
+    @include flex(null, null, center, center);
+    @extend %style--socialsLink;
 
-    color: $primary-white-color;
-    background-color: $footer-socials-color;
+    color: getColor('secondary');
+    background-color: getColor('socials--footer');
 
-    transition: background-color $transition-duration $transition-timing-function;
+    @include transition(background-color, null, null, 250ms, cubic-bezier(0.4, 0, 0.2, 1));
 
     &--team {
-      color: $icon-fill-color;
+      color: getColor('icon-link');
       background-color: transparent;
     }
 
     &:hover,
     &:focus {
-      background-color: $accent-color;
+      background-color: getColor('accent');
     }
 
     &--team:hover,
     &--team:focus {
-      color: $primary-white-color;
+      color: getColor('secondary');
     }
   }
 

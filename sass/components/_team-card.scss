@@ -1,0 +1,31 @@
+.team-card {
+  background: getColor('secondary');
+
+  @extend %style--team-card;
+
+  &__image {
+    @extend %image-block;
+  }
+
+  &__desc {
+    @include padding(30px, 32px, 30px, 32px);
+  }
+
+  &__name {
+    @include margin(null, null, 10px, null);
+
+    color: getColor('text');
+    @include font(500, 16px, 1.19, 00.03em);
+
+    @extend %centerText;
+  }
+
+  &__text {
+    @include margin(null, null, 16px, null);
+
+    color: getColor('primary');
+    @include font(null, 16px, 1.19, 00.03em);
+
+    @extend %centerText;
+  }
+}

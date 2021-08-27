@@ -1,15 +1,9 @@
 .container {
-  box-sizing: border-box;
   width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
+  @include margin(null, auto, null, auto);
+  @include padding(null, 15px, null, 15px);
 
   &--hero {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include flex(column, null, center, center);
   }
 }

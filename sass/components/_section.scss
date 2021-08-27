@@ -1,56 +1,42 @@
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  @include padding(94px, null, 94px, null);
 
   &--hero {
     max-width: 1600px;
     height: 600px;
-    margin-right: auto;
-    margin-left: auto;
-    padding-top: 200px;
-    padding-bottom: 200px;
+    @include margin(null, auto, null, auto);
+    @include padding(200px, null, 200px, null);
 
-    background-color: $hero-background-color;
-    background-image: linear-gradient($linear-gradient-color, $linear-gradient-color),
-      url(../images/index/Img8.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    @extend %background--hero;
   }
 
   &--services {
-    padding-top: 0;
+    @include padding(0, null, null, null);
   }
 
   &--team {
-    background-color: $second-background-color;
+    background-color: getColor('background');
   }
 
   &__title {
-    margin-bottom: 50px;
+    @include margin(null, null, 50px, null);
+    @include font(null, 36px, 1.17, 0.03em);
 
-    color: $title-text-color;
-    font-size: 36px;
-    line-height: 1.17;
-    text-align: center;
-    letter-spacing: 0.03em;
+    @extend %centerText;
+
+    color: getColor('text');
 
     &--hero {
-      margin-bottom: 30px;
+      @include margin(null, null, 30px, null);
+      @include font(900, 44px, 1.36, 0.06em);
 
-      color: $primary-white-color;
-      font-weight: 900;
-      font-size: 44px;
-      line-height: 1.36;
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
+      color: getColor('secondary');
+
+      @extend %uppercaseText;
     }
 
     &--visually-hidden {
-      position: absolute;
-      clip: rect(0 0 0 0);
-      width: 1px;
-      height: 1px;
-      margin: -1px;
+      @extend %visually-hidden;
     }
   }
 }

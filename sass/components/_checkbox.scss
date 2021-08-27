@@ -2,17 +2,13 @@
   width: 100%;
 
   &__label {
-    display: block;
-    position: relative;
-    margin-bottom: 30px;
-    padding-left: 37px;
+    @include position(relative, null, null, null, null);
+    @extend %block;
+    @include margin(null, null, 30px, null);
+    @include padding(null, null, null, 37px);
+    @include font(400, 14px, 1.71, 00.03em);
 
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-
-    color: $primary-text-color;
+    color: getColor('primary');
   }
 
   &__input {
@@ -22,23 +18,21 @@
   }
 
   &__policy {
-    color: $accent-color;
+    color: getColor('accent');
   }
 
   &__icon--off-checked {
-    position: absolute;
-    top: 50%;
-    left: 14px;
+    @include position(absolute, 50%, null, null, 14px);
+
     transform: translateY(-50%);
     opacity: 1;
-    fill: $title-text-color;
+    fill: getColor('text');
 
-    transition: fill $transition-duration $transition-timing-function,
-      opacity $transition-duration $transition-timing-function;
+    @include transition(fill, opacity, null, 250ms, cubic-bezier(0.4, 0, 0.2, 1));
   }
 
   &__input:focus ~ &__icon--off-checked {
-    fill: $accent-color;
+    fill: getColor('accent');
   }
 
   &__input:checked ~ &__icon--off-checked {
@@ -52,7 +46,7 @@
     transform: translateY(-50%);
     opacity: 0;
 
-    transition: opacity $transition-duration $transition-timing-function;
+    @include transition(opacity, null, null, 250ms, cubic-bezier(0.4, 0, 0.2, 1));
   }
 
   &__input:checked ~ &__icon--on-checked {

@@ -1,13 +1,10 @@
 .joining {
-  color: $primary-white-color;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
+  color: getColor('secondary');
+  @include font(700, 14px, 1.14, 0.03em);
 
   &__title {
-    margin-bottom: 20px;
+    @include margin(null, null, 20px, null);
 
-    text-transform: uppercase;
+    @extend %uppercaseText;
   }
 }

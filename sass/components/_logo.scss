@@ -1,16 +1,14 @@
 .logo {
-  font-family: Raleway;
+  font-family: $logo-font;
   font-style: normal;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
 
-  color: $header-logo-color;
+  @include font(700, 26px, 1.19, 00.03em);
+
+  color: getColor('logo');
 
   text-decoration: none;
 
   &__web {
-    color: $accent-color;
+    color: getColor('accent');
   }
 }
