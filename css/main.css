@@ -120,9 +120,9 @@ ul {
 }
 
 .projects-card__desc {
-  border-right: 1px solid var(--second-border-color);
-  border-bottom: 1px solid var(--second-border-color);
-  border-left: 1px solid var(--second-border-color);
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
 }
 
 .modal {
